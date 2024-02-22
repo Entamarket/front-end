@@ -41,7 +41,7 @@ const HomeProductLists = (props) => {
       <div className="stock__progress-box">
         <div
           className={stockClassName}
-          style={{ width: `${props.stock}%` }}
+          style={{ width: props.stock >= 100 ? `${100}%` : `${props.stock}%` }}
         ></div>
       </div>
       <div className="add-to-cart-box">
