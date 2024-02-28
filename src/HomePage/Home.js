@@ -58,8 +58,9 @@ const Home = (props) => {
 
   const navigate = useNavigate();
 
-  const showSingleProduct = (prodId) => {
-    navigate("/product");
+  const showSingleProduct = (prodId, prodName) => {
+    let nameProd = prodName.replace(/\s/g, "-");
+    navigate(`/product?id=${prodId}&name=${nameProd}`);
     window.scrollTo(0, 0);
     localStorage.setItem("prodID", prodId);
   };
@@ -158,7 +159,7 @@ const Home = (props) => {
                 stock={product.stock}
                 price={convertPrice(product.price)}
                 showSingleProduct={() => {
-                  showSingleProduct(product._id);
+                  showSingleProduct(product._id, product.name);
                 }}
                 homeAddToCart={() => {
                   if (parseInt(product.stock) === 0) {
