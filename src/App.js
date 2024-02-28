@@ -27,6 +27,7 @@ import ReturnsPolicy from "./Terms/Policy/ReturnsPolicy";
 import ShopHome from "./Shops/ShopHome";
 import SellerVerification from "./SellerVerification/SellerVerification";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import DeleteAccount from "./DeleteAccount/DeleteAccount";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
               element={<SellerVerification />}
             />
             <Route path="/shop" element={<ShopHome />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

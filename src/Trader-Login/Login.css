@@ -35,6 +35,37 @@
 .mail-login {
   padding-right: 15px;
 }
+.head2box1 {
+  margin-bottom: 20px;
+}
+
+.delet-icon {
+  display: inline-block;
+  font-size: 30px;
+  color: rgb(250, 22, 22);
+}
+.phoneInp1Bx {
+  width: 100%;
+  padding: 13px 10px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.phoneInp1Bx:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+.phoneInp1Bx option {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+option {
+  font-weight: 500;
+  padding: 10px;
+}
 
 @media screen and (max-width: 600px) {
   .form-logo {
