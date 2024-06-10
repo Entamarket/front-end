@@ -153,7 +153,7 @@ const CheckOutOverview = () => {
   const config = {
     reference: new Date().getTime().toString(),
     email: dataInfo.email ? dataInfo.email : "",
-    amount: totalPay(),
+    amount: Math.ceil(totalPay()),
     publicKey,
   };
 
