@@ -169,12 +169,21 @@ const Home = (props) => {
 
       <HomeHeader />
 
-      <div className="advertBoxMain">
-        <p>Place Adverts Here</p>
-      </div>
-
       <div className="carobox">
         <div className="categorySide">
+          <div
+            className="boxCatView"
+            onClick={() => handleViewCategory(Electronics)}
+          >
+            <p>
+              <b>Categories</b>
+            </p>
+            <input
+              type="radio"
+              checked
+              onChange={() => handleViewCategory(Electronics)}
+            />
+          </div>
           <div
             className="boxCatView"
             onClick={() => handleViewCategory(Electronics)}
@@ -256,7 +265,7 @@ const Home = (props) => {
           <div className="boxCatView">
             <div className="boxMd2Flex">
               <FiPhoneCall />
-              <p>+234 0906 359 7740</p>
+              <p>+234 09063597740</p>
             </div>
           </div>
 
@@ -285,10 +294,6 @@ const Home = (props) => {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="advertBoxMain">
-        <p>Place Adverts Here</p>
       </div>
 
       <HomeBody homeTitle="Top Market Products">

@@ -18,7 +18,7 @@ import "./CheckOutOverview.css";
 const CheckOutOverview = () => {
   const navigate = useNavigate();
   const cartInfo = JSON.parse(localStorage.getItem("cartInfo"));
-  const publicKey = "pk_test_c8e1d0064fd54914863c40567492c84ab189afc0";
+  const publicKey = "pk_live_c795ee5c2a919db2b0f18901be0c17503e601edf";
   const entamarketToken = localStorage.getItem("entamarketToken");
   const showLoader = useSelector((state) => state.loader.loaderShow);
   const [calcData, setCalcData] = useState([]);
