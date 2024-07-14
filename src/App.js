@@ -29,6 +29,7 @@ import SellerVerification from "./SellerVerification/SellerVerification";
 import PageNotFound from "./PageNotFound/PageNotFound";
 import DeleteAccount from "./DeleteAccount/DeleteAccount";
 import ViewCategory from "./ViewCategory/ViewCategory";
+import Join from "./Join/Join";
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
             <Route path="/shop" element={<ShopHome />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/category" element={<ViewCategory />} />
+            <Route path="/join-us" element={<Join />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
