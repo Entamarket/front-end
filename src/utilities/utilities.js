@@ -1,5 +1,5 @@
 const updater = {};
-const apiUrl = "https://www.entamarket-api.com/";
+const apiUrl = "https://api.entamarket.com/";
 const monthsName = [
   "Jan",
   "Feb",
