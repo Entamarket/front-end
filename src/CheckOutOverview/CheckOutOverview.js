@@ -153,7 +153,7 @@ const CheckOutOverview = () => {
   const config = {
     reference: new Date().getTime().toString(),
     email: dataInfo.email ? dataInfo.email : "",
-    amount: Math.ceil(totalPay()),
+    amount: totalPay(),
     publicKey,
   };
 
@@ -194,6 +194,7 @@ const CheckOutOverview = () => {
                 phoneNumber: phone.current.value,
                 deliveryAddress: location.current.value,
                 location: delivPath,
+                ref: config.reference,
               };
               initializePayment(onSuccess, onClose);
             }
@@ -221,7 +222,7 @@ const CheckOutOverview = () => {
     setShowOptions(false);
     setshowDeliv(false);
     setShowError(false);
-    isSupport(false);
+    setIsSupport(false);
   };
 
   const addMainLandLocation = (e) => {

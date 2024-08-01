@@ -77,7 +77,7 @@ const HomeSingleProd = (props) => {
             <span>
               <b>Weight: </b>
             </span>{" "}
-            <span> {Math.floor(props.prodWeight)}Kg</span>
+            <span> {props.prodWeight}Kg</span>
           </div>
         ) : null}
         <div className="product-desc p-span">
