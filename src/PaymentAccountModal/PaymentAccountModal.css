@@ -1,0 +1,33 @@
+.pay_account-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pay_account-icon span{
+    font-size:  23px;  
+    background-color: var(--light-primary);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--dark-primary);
+    margin-right: 10px;
+}
+.modBoxFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.withdr2 {
+    font-size: 19px;
+    cursor: pointer;
+
+}
+.withFlex{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.modBoxFlex span{
+    font-weight: 600;
+}
