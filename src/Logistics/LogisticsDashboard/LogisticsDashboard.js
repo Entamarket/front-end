@@ -83,6 +83,7 @@ const LogisticsDashboard = () => {
             setShowOrderArr(false);
           } else {
             setShowOrderArr(true);
+            console.log(resp.pendingDeliveries);
             let newOrder = [];
             for(let i of resp.pendingDeliveries){
               for(let p of i.purchases){
@@ -507,7 +508,7 @@ const LogisticsDashboard = () => {
             </h3>
             {prodDetails.map((orderData) => {
           
-              if (orderData.trackingStatus !== "logistics") {
+           
                 return (
                   <div key={orderData.product._id} className="orderBox2">
                     <div className="order__main-box">
@@ -565,9 +566,6 @@ const LogisticsDashboard = () => {
                     </div>
                   </div>
                 );
-              } else {
-                return false;
-              }
             })}
           </div>
         </div>
