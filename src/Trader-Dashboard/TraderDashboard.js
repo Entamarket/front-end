@@ -293,6 +293,7 @@ const TraderDashboard = () => {
         fetch("https://api.paystack.co/bank?currency=NGN")
           .then((resp) => resp.json())
           .then((resp) => {
+            console.log(resp.data);
             setbankNode(resp.data);
           });
       } else {
