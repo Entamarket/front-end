@@ -47,7 +47,9 @@ const CheckOutOverview = () => {
     phoneNumber: "",
     deliveryAddress: "",
     location: delivPath,
+    ref: "",
   };
+
 
   useEffect(() => {
     if (!entamarketToken) {
@@ -190,8 +192,11 @@ const CheckOutOverview = () => {
                 lastName: lastname.current.value,
                 phoneNumber: phone.current.value,
                 deliveryAddress: location.current.value,
+                location: delivPath,
                 ref: config.reference,
               };
+
+              console.log(billData)
               initializePayment(onSuccess, onClose);
             }
           }}
@@ -233,10 +238,8 @@ const CheckOutOverview = () => {
       lastName: lastname.current.value,
       phoneNumber: phone.current.value,
       deliveryAddress: location.current.value,
-      location: delivPath,
+      location: e.target.value,
     };
-    
-   
   };
 
   const outLagosHandler = () => {
