@@ -139,6 +139,7 @@ const CheckOutOverview = () => {
       body: JSON.stringify(cartVal),
     })
       .then((res) => res.json())
+      .then((resp) => console.log(resp))
       .catch((error) => console.log(error));
   };
 
@@ -195,8 +196,6 @@ const CheckOutOverview = () => {
                 location: delivPath,
                 ref: config.reference,
               };
-
-              console.log(billData)
               initializePayment(onSuccess, onClose);
             }
           }}
