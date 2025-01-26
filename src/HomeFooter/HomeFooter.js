@@ -30,22 +30,20 @@ const HomeFooter = () => {
         <div className="home__footer-links">
           <h3>Help Center</h3>
           <Link to="/support">Customer Support</Link>
-          <a href="/">How to Buy on Entamarket</a>
-          <a href="/">How to Register as a seller</a>
+          <a href="/">Buy on Entamarket</a>
+          <a href="/">Register as a seller</a>
         </div>
 
         <div className="home__footer-links about-link">
           <h3>About Entamarket</h3>
           <Link to="/aboutus">About us</Link>
           <Link to="/terms-of-service">Terms & Conditions</Link>
-          <a href="/">Delivery Options and timelines</a>
         </div>
 
         <div className="home__footer-links earn-link">
-          <h3>How to Earn on Entamarket</h3>
-          <Link to="/signup">Create a Seller account</Link>
+          <h3>Policy & Support</h3>
+          <Link to="/support">Customer Support</Link>
           <Link to="/returns-policy">Returns Policy</Link>
-          <a href="/">Payment Withdrawal</a>
         </div>
       </div>
     </div>
