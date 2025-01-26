@@ -29,13 +29,13 @@ const HomeFooter = () => {
       <div className="main__footer-links">
         <div className="home__footer-links">
           <h3>Help Center</h3>
-          <Link to="/support">Customer Support</Link>
-          <a href="/">Buy on Entamarket</a>
-          <a href="/">Register as a seller</a>
+          <Link to="/support">Contact us</Link>
+          <Link to="/buyersignup">Buy on Entamarket</Link>
+          <Link to="/signup">Register as a seller</Link>
         </div>
 
         <div className="home__footer-links about-link">
-          <h3>About Entamarket</h3>
+          <h3>About Us</h3>
           <Link to="/aboutus">About us</Link>
           <Link to="/terms-of-service">Terms & Conditions</Link>
         </div>
