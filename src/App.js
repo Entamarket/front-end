@@ -29,6 +29,7 @@ import SellerVerification from "./SellerVerification/SellerVerification";
 import PageNotFound from "./PageNotFound/PageNotFound";
 import DeleteAccount from "./DeleteAccount/DeleteAccount";
 import ViewCategory from "./ViewCategory/ViewCategory";
+import Shippings from "./Terms/Shipping/Shipping";
 import Join from "./Join/Join";
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/returns-policy" element={<ReturnsPolicy />} />
+            <Route path="/shipping-policy" element={<Shippings />} />
             <Route
               path="/seller-verification"
               element={<SellerVerification />}

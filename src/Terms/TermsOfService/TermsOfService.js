@@ -117,7 +117,7 @@ const TermsOfService = () => {
           through the website. These products or Services may have limited
           quantities and are subject to return or exchange only according to our
           Return Policy. <br /> <br />
-          To view our Return Policy, please visit [LINK TO RETURN POLICY] We
+          To view our Return Policy, please visit <Link className="page-link" to="/returns-policy">Returns policy</Link>. We
           have made every effort to display as accurately as possible the colors
           and images of our products that appear at the site. We cannot
           guarantee that your computer monitor's display of any color will be
@@ -389,6 +389,35 @@ const TermsOfService = () => {
           Terms of Service constitutes acceptance of those changes.
         </p>
       </div>
+
+        <div className="termsOfService-box">
+        <h2>USER ACCOUNT RESPONSIBILITY</h2>
+        <p>
+         You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer or device. You agree to accept responsibility for all activities that occur under your account or password. EntàMarket reserves the right to refuse service, terminate accounts, or cancel orders at our discretion if we believe there has been a violation of these Terms of Service.
+        </p>
+      </div>
+
+      <div className="termsOfService-box">
+        <h2>FORCE MAJEURE </h2>
+        <p>
+         We shall not be liable for any delay or failure to perform any of our obligations under these Terms of Service if such delay or failure is caused by events beyond our reasonable control, including but not limited to acts of God, war, terrorism, strikes, pandemics, or governmental actions.
+        </p>
+      </div>
+
+      <div className="termsOfService-box">
+        <h2>DIGITAL PRODUCTS AND SERVICES </h2>
+        <p>
+        For digital products and services offered through our site, all sales are final and non-refundable unless otherwise stated in writing. You are granted a non-exclusive, non-transferable, revocable license to access and use the digital products and services strictly in accordance with these Terms of Service. Any unauthorized use or distribution of digital content is strictly prohibited.
+        </p>
+      </div>
+      <div className="termsOfService-box">
+        <h2>RETURN POLICY AND SELLER RESPONSIBILITIES</h2>
+        <p>
+        When a return is made by a customer, EntàMarket will remit the refund to the customer/buyer, resulting in a negative balance on the seller’s account. Sellers are responsible for returning the refunded amount to EntàMarket. Once the money is refunded, EntàMarket will attempt to recover the owed amount from the seller's future sales. If this is not possible, EntàMarket reserves the right to explore other methods to recoup the owed funds. Sellers are expected to comply promptly with the repayment terms to avoid any further action.
+        </p>
+      </div>
+
+
       <div className="termsOfService-box">
         <h2>CONTACT INFORMATION</h2>
         <p>
@@ -397,6 +426,11 @@ const TermsOfService = () => {
           <br />
           <br />
           Our contact information is posted below: <br /> <br />
+
+          <i>Last Updated 06/03/2025</i>
+
+          <br />
+          <br />
           <span className="span-link"> Entamarket Limited</span>
           <br />
           <span className="span-link">support@entamarket.com</span>

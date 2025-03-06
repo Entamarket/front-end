@@ -38,11 +38,13 @@ const HomeFooter = () => {
           <h3>About Us</h3>
           <Link to="/aboutus">About us</Link>
           <Link to="/terms-of-service">Terms & Conditions</Link>
+           <Link to="/shipping-policy">Shipping & Delivery</Link>
         </div>
 
         <div className="home__footer-links earn-link">
           <h3>Policy & Support</h3>
           <Link to="/support">Customer Support</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/returns-policy">Returns Policy</Link>
         </div>
       </div>
